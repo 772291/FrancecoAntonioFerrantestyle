@@ -419,22 +419,7 @@ document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
 
 
 
-<script>
-function toggleMusic() {
-  const audio = document.getElementById('bgMusic');
-  const btn = document.getElementById('musicBtn');
-  const bars = document.getElementById('musicBars');
-  if (audio.paused) {
-    audio.play();
-    btn.textContent = '⏸';
-    bars.classList.remove('paused');
-  } else {
-    audio.pause();
-    btn.textContent = '▶';
-    bars.classList.add('paused');
-  }
-}
-</script>
+
 <audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
